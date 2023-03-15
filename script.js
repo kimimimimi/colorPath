@@ -1,6 +1,6 @@
 const colors = ['red', 'green', 'blue', 'yellow', 'orange'];
 const gridSize = 5; // Change this value to set a different grid size
-const colorCount = 2; // Change this value to use a different number of colors
+const colorCount = 3; // Change this value to use a different number of colors
 
 const gameBoard = document.getElementById('gameBoard');
 const resetButton = document.getElementById('resetButton');
@@ -66,10 +66,10 @@ function isGoalReached(startTile, endTile) {
       }
 
       const nextTile = gameBoard.childNodes[ny * gridSize + nx];
+      
       if (
         !visited.has(`${nx},${ny}`) &&
-        nextTile.classList.contains(startTile.classList[1]) &&
-        nextTile.classList.contains('selected')
+        (nextTile.classList.contains(startTile.classList[1]) || nextTile.classList.contains('selected'))
       ) {
         queue.push([nx, ny]);
       }
@@ -91,6 +91,7 @@ function generateGameBoard() {
     x: Math.floor(Math.random() * gridSize),
     y: Math.floor(Math.random() * gridSize),
   };
+  
 
   for (let y = 0; y < gridSize; y++)
   {

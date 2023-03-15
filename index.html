@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Path</title>
     <link rel="stylesheet" href="style.css">
+    <title>Connect the Path Game</title>
 </head>
 <body>
-    <div class="game-board" id="gameBoard"></div>
+    <h1>Connect the Path Game</h1>
+    <p>
+        ゲームの目的は、スタート(S)からゴール(E)まで同じ色のタイルを繋げることです。タイルをクリックすると、選択されたタイルがスタートのタイルと同じ色であるとみなされるようになります。スタートからゴールまで同じ色のタイルでつなげることができたら、おめでとうメッセージが表示されます。
+    </p>
+    <div id="gameBoard"></div>
     <button id="resetButton">Reset</button>
     <script src="script.js"></script>
 </body>

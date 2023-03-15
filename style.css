@@ -1,63 +1,62 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
 }
 
-.game-board {
-    display: grid;
-    gap: 1px;
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  max-width: 600px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+#gameBoard {
+  display: grid;
+  gap: 1px;
+  background-color: black;
+  margin-bottom: 10px;
 }
 
 .tile {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #000;
-    cursor: pointer;
+  width: 28px; /* Change this line */
+  height: 28px; /* Change this line */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  border: 2px solid black; /* Change this line */
 }
 
-.start-tile, .end-tile {
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.start-tile {
-    color: white;
-}
-
-.end-tile {
-    color: black;
+.selected {
+  border-color: white; /* Change this line */
 }
 
 .red {
-    background-color: red;
+  background-color: red;
 }
 
 .green {
-    background-color: green;
+  background-color: green;
 }
 
 .blue {
-    background-color: blue;
+  background-color: blue;
 }
 
 .yellow {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 .orange {
-    background-color: orange;
+  background-color: orange;
 }
 
-/* Add the following style */
-.selected {
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+.start-tile {
+  border-color: black; /* Change this line */
 }
-
