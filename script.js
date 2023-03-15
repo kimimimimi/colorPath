@@ -69,7 +69,7 @@ function isGoalReached(startTile, endTile) {
       if (
         !visited.has(`${nx},${ny}`) &&
         nextTile.classList.contains(startTile.classList[1]) &&
-        !nextTile.classList.contains('selected')
+        nextTile.classList.contains('selected')
       ) {
         queue.push([nx, ny]);
       }
@@ -111,7 +111,7 @@ function generateGameBoard() {
             tile.addEventListener('click', () => {
                 if (isTileSelected(tile)) {
                     clearSelected();
-                } else if (tile.classList.contains('start-tile') || tile.classList.contains('end-tile')) {
+                } else if (tile.classList.contains('start-tile')) {
                     return;
                 } else {
                     setSelected(tile);
