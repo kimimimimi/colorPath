@@ -10,8 +10,6 @@ body {
 
 .game-board {
     display: grid;
-    grid-template-columns: repeat(10, 30px);
-    grid-template-rows: repeat(10, 30px);
     gap: 1px;
 }
 
