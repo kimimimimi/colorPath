@@ -57,3 +57,9 @@ body {
 .orange {
     background-color: orange;
 }
+
+/* Add the following style */
+.selected {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+
